@@ -1,0 +1,47 @@
+section{
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid black;
+}
+
+.hero{
+    background-image: url('../images/350x150.png');
+    background-color: grey;
+    height: 400px;
+
+}
+
+.light-grey-bg{
+    background-color: lightgrey;
+}
+
+.grey-bg{
+    background-color: grey;
+}
+
+.cta{
+    background-color: sandybrown;
+    color: firebrick;
+    padding: 1em;
+    transition: all .3s;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.cta:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.secondary-cta{
+    background-color: aqua;
+    color: orangered;
+}
+
+.secondary-cta:hover{
+    background-color: red;
+    color: white;
+}

@@ -1,17 +1,72 @@
+:root{
+    --primary-color: blue;
+    --primary-color-contrast: white;
+    --secondary-color: purple;
+    --secondary-color-contrast: white;
+}
+
+
+/* global css stuff */
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 section{
     justify-content: center;
-    display: flex;
+    display: flex;  
     flex-flow: column;
     align-items: center;
     padding: 50px 0;
     border-bottom: 1px solid black;
 }
 
-.hero{
-    background-image: url('../images/350x150.png');
-    background-color: grey;
-    height: 400px;
+#resource_list{
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+/* mke them under one class or something*/
 
+#resource_list li{
+    font-size: 20px;
+    list-style: none;
+    margin: 0 100px;
+}
+
+#main-nav{
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+nav ul{
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+nav ul li{
+    font-size: 20px;
+    list-style: none;
+    margin: 0 50px;
+}
+
+.resource_pics{
+    height: 250px;
+}
+
+.hero{
+    background-image: url('../images/aurora_image.jpg');
+    background-color: grey;
+    height: 600px;
+    color: azure;
+    /* position:relative; 
+    left:80px; top:2px */
+    background-size: cover;
+    background-position: center left;
 }
 
 .light-grey-bg{
@@ -23,25 +78,27 @@ section{
 }
 
 .cta{
-    background-color: sandybrown;
-    color: firebrick;
+    background-color: var(--primary-color);/*sandybrown; */
+    color: var(--primary-color-contrast);/*firebrick;*/
     padding: 1em;
-    transition: all .3s;
+    /* transition: all .3s; */
     border-radius: 30px;
     text-decoration: none;
+    box-shadow: 8px 8px 12px rgb(0 0 0 / 8%);
+    transition: all .3s cubic-bezier(0,0,.5,1);
 }
 
 .cta:hover{
-    background-color: whitesmoke;
-    color: black;
+    background-color: var(--primary-color-contrast);/*whitesmoke;*/
+    color: var(--primary-color);/*black;*/
 }
 
 .secondary-cta{
-    background-color: aqua;
-    color: orangered;
+    background-color: var(--secondary-color);/*aqua;*/
+    color: var(--secondary-color-contrast);/*orangered;*/
 }
 
 .secondary-cta:hover{
-    background-color: red;
-    color: white;
+    background-color: var(--secondary-color-contrast);/*red;*/
+    color: var(--secondary-color);/*white;*/
 }

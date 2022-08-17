@@ -9,7 +9,8 @@
 /* global css stuff */
 
 *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 section{
     justify-content: center;
@@ -20,7 +21,7 @@ section{
     border-bottom: 1px solid black;
 }
 
-#resource_list{
+.resource_list{
     justify-content: center;
     display: flex;
     flex-flow: row;
@@ -28,17 +29,21 @@ section{
 }
 /* mke them under one class or something*/
 
-#resource_list li{
+.resource_list li{
     font-size: 20px;
     list-style: none;
     margin: 0 100px;
 }
 
+#studies li{
+    margin: 0px 25px;
+}
 #main-nav{
     justify-content: center;
     display: flex;
     flex-flow: row;
     align-items: center;
+    background-color: darkblue;
 }
 
 nav ul{
@@ -46,16 +51,59 @@ nav ul{
     display: flex;
     flex-flow: row;
     align-items: center;
+    margin: 0;
 }
 
 nav ul li{
     font-size: 20px;
     list-style: none;
-    margin: 0 50px;
+    /* margin: 0 0px; */
+    transition: all 0.3s;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em 50px;
+    color: white;
+    transition: all 0.2s;
+}
+
+nav ul li a:hover{
+    background-color: darkgrey;
 }
 
 .resource_pics{
     height: 250px;
+    transition: all 0.3s;
+}
+
+
+.resource_pics:hover{
+    height: 260px;
+}
+
+
+.study_pics{
+    height: 180px;
+    transition: all 0.3s;
+}
+
+.study_pics:hover{
+    height: 185px;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    text-shadow: 8px 8px 12px rgb(0 0 0 / 8%);   
+}
+
+#title{
+    font-size: 60px;
+}
+
+img{
+    box-shadow: 8px 8px 12px rgb(0 0 0 / 8%);
 }
 
 .hero{
